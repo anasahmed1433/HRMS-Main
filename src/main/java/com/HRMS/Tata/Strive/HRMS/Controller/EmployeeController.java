@@ -17,18 +17,37 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    @PostMapping
+    // CREATE
+    @PostMapping("/insert")
     public Employee addEmployee(@RequestBody Employee employee) {
         return employeeService.saveEmployee(employee);
     }
 
+    // READ - ALL
     @GetMapping
     public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 
+    // READ - BY ID
     @GetMapping("/{id}")
     public Employee getEmployee(@PathVariable int id) {
         return employeeService.getEmployeeById(id);
+    }
+
+    // UPDATE
+    @PutMapping("/{id}")
+    public Employee updateEmployee(
+            @PathVariable int id,
+            @RequestBody Employee employee) {
+
+        return employeeService.updateEmployee(id, employee);
+    }
+
+    // DELETE
+    @DeleteMapping("/{id}")
+    public String deleteEmployee(@PathVariable int id) {
+        employeeService.deleteEmployee(id);
+        return "Employee deleted successfully";
     }
 }

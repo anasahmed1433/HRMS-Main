@@ -17,12 +17,12 @@ public class AdminController {
         this.adminService = adminService;
     }
 
-    @PostMapping
+    @PostMapping("create")
     public Admin createAdmin(@RequestBody Admin admin) {
         return adminService.saveAdmin(admin);
     }
 
-    @GetMapping
+    @GetMapping("/list")
     public List<Admin> getAllAdmins() {
         return adminService.getAllAdmins();
     }
