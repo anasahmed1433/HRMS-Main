@@ -17,7 +17,7 @@ public class EffortsController {
         this.effortsService = effortsService;
     }
 
-    @PostMapping
+    @PostMapping("/insert")
     public Efforts logEffort(@RequestBody Efforts efforts) {
         return effortsService.saveEffort(efforts);
     }

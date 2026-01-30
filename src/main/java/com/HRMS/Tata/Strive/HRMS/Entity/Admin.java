@@ -16,11 +16,9 @@ public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int adminId;
-
     private String name;
     private String email;
     private String phone;
-
     private String adminRole; // HR / MANAGER
 }
 
