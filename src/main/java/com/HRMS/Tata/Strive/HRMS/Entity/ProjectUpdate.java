@@ -17,7 +17,7 @@ public class ProjectUpdate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int updateId;
+    private Integer updateId;
 
     private LocalDate updateDate;
     private String workMode;

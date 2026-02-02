@@ -17,7 +17,7 @@ public class OrgUnit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int orgUnitId;
+    private Integer orgUnitId;
 
     private int deptId;
     private String deptName;

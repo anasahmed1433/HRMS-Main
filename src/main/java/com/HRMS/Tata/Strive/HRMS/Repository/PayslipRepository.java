@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface PayslipRepository extends JpaRepository<Payslip, Integer> {
 
-    List<Payslip> findByEmployeeEmployeeId(int employeeId);
+    List<Payslip> findByEmployeeEmployeeId(Integer employeeId);
 }
 

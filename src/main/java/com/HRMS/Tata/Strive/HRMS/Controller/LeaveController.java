@@ -24,7 +24,7 @@ public class LeaveController {
     }
 
     @GetMapping("/employee/{employeeId}")
-    public List<Leave> getLeavesByEmployee(@PathVariable int employeeId) {
+    public List<Leave> getLeavesByEmployee(@PathVariable Integer employeeId) {
         return leaveService.getLeavesByEmployee(employeeId);
     }
 }

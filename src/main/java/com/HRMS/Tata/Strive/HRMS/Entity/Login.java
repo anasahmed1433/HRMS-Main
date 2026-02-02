@@ -17,7 +17,7 @@ public class Login {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int loginId;
+    private Integer loginId;
 
     private String username;
     private String passwordHash;

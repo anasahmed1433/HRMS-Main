@@ -23,7 +23,7 @@ public class PayslipController {
     }
 
     @GetMapping("/employee/{employeeId}")
-    public List<Payslip> getPayslips(@PathVariable int employeeId) {
+    public List<Payslip> getPayslips(@PathVariable Integer employeeId) {
         return payslipService.getPayslipsByEmployee(employeeId);
     }
 }

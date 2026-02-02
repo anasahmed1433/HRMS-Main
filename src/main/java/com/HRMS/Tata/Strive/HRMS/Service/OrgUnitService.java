@@ -23,7 +23,7 @@ public class OrgUnitService {
         return orgUnitRepository.findAll();
     }
 
-    public OrgUnit getOrgUnitById(int id) {
+    public OrgUnit getOrgUnitById(Integer id) {
         return orgUnitRepository.findById(id).orElse(null);
     }
 }

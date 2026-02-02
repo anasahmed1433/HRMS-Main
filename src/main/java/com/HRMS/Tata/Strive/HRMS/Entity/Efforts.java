@@ -17,7 +17,7 @@ public class Efforts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int effortId;
+    private Integer effortId;
 
     private LocalDate workDate;
     private int hoursWorked;

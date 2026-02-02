@@ -31,14 +31,14 @@ public class EmployeeController {
 
     // READ - BY ID
     @GetMapping("/{id}")
-    public Employee getEmployee(@PathVariable int id) {
+    public Employee getEmployee(@PathVariable Integer id) {
         return employeeService.getEmployeeById(id);
     }
 
     // UPDATE
     @PutMapping("/{id}")
     public Employee updateEmployee(
-            @PathVariable int id,
+            @PathVariable Integer id,
             @RequestBody Employee employee) {
 
         return employeeService.updateEmployee(id, employee);
@@ -46,7 +46,7 @@ public class EmployeeController {
 
     // DELETE
     @DeleteMapping("/{id}")
-    public String deleteEmployee(@PathVariable int id) {
+    public String deleteEmployee(@PathVariable Integer id) {
         employeeService.deleteEmployee(id);
         return "Employee deleted successfully";
     }
