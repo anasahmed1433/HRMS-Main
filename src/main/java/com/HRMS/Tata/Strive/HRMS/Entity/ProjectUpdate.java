@@ -22,7 +22,7 @@ public class ProjectUpdate {
     private LocalDate updateDate;
     private String workMode;
     private String statusMessage;
-    private int progressPercentage;
+    private Integer progressPercentage;
 
     @ManyToOne
     @JoinColumn(name = "employee_id")

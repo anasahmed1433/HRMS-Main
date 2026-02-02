@@ -20,7 +20,7 @@ public class Efforts {
     private Integer effortId;
 
     private LocalDate workDate;
-    private int hoursWorked;
+    private Integer hoursWorked;
     private String taskDescription;
 
     @ManyToOne
