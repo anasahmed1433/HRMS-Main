@@ -19,7 +19,7 @@ public class EffortsService {
         return effortsRepository.save(efforts);
     }
 
-    public List<Efforts> getEffortsByEmployee(int employeeId) {
+    public List<Efforts> getEffortsByEmployee(Integer employeeId) {
         return effortsRepository.findByEmployeeEmployeeId(employeeId);
     }
 }

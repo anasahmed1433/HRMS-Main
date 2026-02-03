@@ -22,7 +22,7 @@ public class PayslipService {
         return payslipRepository.save(payslip);
     }
 
-    public List<Payslip> getPayslipsByEmployee(int employeeId) {
+    public List<Payslip> getPayslipsByEmployee(Integer employeeId) {
         return payslipRepository.findByEmployeeEmployeeId(employeeId);
     }
 }

@@ -17,12 +17,12 @@ public class ProjectUpdate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int updateId;
+    private Integer updateId;
 
     private LocalDate updateDate;
     private String workMode;
     private String statusMessage;
-    private int progressPercentage;
+    private Integer progressPercentage;
 
     @ManyToOne
     @JoinColumn(name = "employee_id")

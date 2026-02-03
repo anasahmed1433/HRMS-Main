@@ -20,7 +20,7 @@ public class LeaveService {
         return leaveRepository.save(leave);
     }
 
-    public List<Leave> getLeavesByEmployee(int employeeId) {
+    public List<Leave> getLeavesByEmployee(Integer employeeId) {
         return leaveRepository.findByEmployeeEmployeeId(employeeId);
     }
 }

@@ -26,12 +26,12 @@ public class EmployeeService {
     }
 
     // READ - BY ID
-    public Employee getEmployeeById(int id) {
+    public Employee getEmployeeById(Integer id) {
         return employeeRepository.findById(id).orElse(null);
     }
 
     // UPDATE
-    public Employee updateEmployee(int id, Employee updatedEmployee) {
+    public Employee updateEmployee(Integer id, Employee updatedEmployee) {
 
         Employee existingEmployee = employeeRepository.findById(id).orElse(null);
 
@@ -50,7 +50,7 @@ public class EmployeeService {
     }
 
     // DELETE
-    public void deleteEmployee(int id) {
+    public void deleteEmployee(Integer id) {
         employeeRepository.deleteById(id);
     }
 }

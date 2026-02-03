@@ -23,7 +23,7 @@ public class ProjectUpdateController {
     }
 
     @GetMapping("/employee/{employeeId}")
-    public List<ProjectUpdate> getUpdates(@PathVariable int employeeId) {
+    public List<ProjectUpdate> getUpdates(@PathVariable Integer employeeId) {
         return projectUpdateService.getUpdatesByEmployee(employeeId);
     }
 }

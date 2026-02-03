@@ -23,7 +23,7 @@ public class EffortsController {
     }
 
     @GetMapping("/employee/{employeeId}")
-    public List<Efforts> getEfforts(@PathVariable int employeeId) {
+    public List<Efforts> getEfforts(@PathVariable Integer employeeId) {
         return effortsService.getEffortsByEmployee(employeeId);
     }
 }

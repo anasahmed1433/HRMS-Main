@@ -17,7 +17,7 @@ public class Payslip {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int payslipId;
+    private Integer payslipId;
 
     private String month;
     private double basicSalary;

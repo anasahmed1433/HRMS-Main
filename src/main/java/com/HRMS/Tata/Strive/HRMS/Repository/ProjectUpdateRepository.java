@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface ProjectUpdateRepository extends JpaRepository<ProjectUpdate, Integer> {
 
-    List<ProjectUpdate> findByEmployeeEmployeeId(int employeeId);
+    List<ProjectUpdate> findByEmployeeEmployeeId(Integer employeeId);
 }
 

@@ -19,7 +19,7 @@ public class ProjectUpdateService {
         return projectUpdateRepository.save(update);
     }
 
-    public List<ProjectUpdate> getUpdatesByEmployee(int employeeId) {
+    public List<ProjectUpdate> getUpdatesByEmployee(Integer employeeId) {
         return projectUpdateRepository.findByEmployeeEmployeeId(employeeId);
     }
 }

@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface LeaveRepository extends JpaRepository<Leave, Integer> {
 
-    List<Leave> findByEmployeeEmployeeId(int employeeId);
+    List<Leave> findByEmployeeEmployeeId(Integer employeeId);
 }
 

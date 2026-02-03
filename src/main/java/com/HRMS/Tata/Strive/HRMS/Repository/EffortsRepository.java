@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface EffortsRepository extends JpaRepository<Efforts, Integer> {
 
-    List<Efforts> findByEmployeeEmployeeId(int employeeId);
+    List<Efforts> findByEmployeeEmployeeId(Integer employeeId);
 }
 
