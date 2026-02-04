@@ -381,16 +381,6 @@ mvn spring-boot:run
 http://localhost:8080
 
 
-**
----
-
-If you want next, I can:
-- Make this **resume-ready**
-- Add **Swagger API docs**
-- Add **JWT authentication**
-- Create a **frontend-friendly API list**
-
-Just tell me 👍**
 
 
 
