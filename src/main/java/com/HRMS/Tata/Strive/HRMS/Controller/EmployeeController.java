@@ -18,7 +18,7 @@ public class EmployeeController {
     }
 
     // CREATE
-    @PostMapping("/insert")
+    @PostMapping()
     public Employee addEmployee(@RequestBody Employee employee) {
         return employeeService.saveEmployee(employee);
     }
