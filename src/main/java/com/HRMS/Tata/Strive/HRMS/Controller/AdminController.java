@@ -5,7 +5,7 @@ import com.HRMS.Tata.Strive.HRMS.Service.AdminService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+//Admin
 @RestController
 @RequestMapping("/api/admins")
 @CrossOrigin
